@@ -2,4 +2,4 @@
 
 Select * from city where countrycode='USA' and population>100000;
 
-/* It was easy problem as It was about using select and where statements to filter the results by specific condition. */
+/* It was an easy problem as It was about using select and where statements to filter the results by specific condition. */
