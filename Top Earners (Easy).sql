@@ -1,0 +1,6 @@
+/* We define an employee's total earnings to be their monthly  worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as  space-separated integers. */
+
+update employee set salary=months*salary;
+select concat ((select max(salary) from employee),' ',(select top 1 count(salary) from employee group by salary order by salary desc));
+
+/* Since we need to calculate total earnings as months x salary so I update salary column to be the total earnings as salary is a part of total earnings formula, next query is about getting maximum total earnings and counting the number of employees who has the maximum total earnings , so I counted the number of rows aggregated to the total earnings and ordered the table by total earnings descendingly and got the first value of number of employees as it is the number of employees who has the maximum total earnings after ordering the table */
