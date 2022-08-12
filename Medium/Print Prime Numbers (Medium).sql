@@ -29,4 +29,11 @@ end
 select substring(@result,1,len(@result)-1);
 
 
-/* Prime numbers are numbers that are divisible by 1 and by it self only , so in this solution make nested loop, outer loop are looping on i variable which starts with 2 to 1000, inner loop are iterating from 2 to the previous number to i in order to check if i variable is divisible by any number in this range or not , if yes so i value in this iteration is not prime number because it is divisible by an number or more beside 1 and it self, if no , so it its a prime number , the result is a string which should have all the numbers satisfied the condition with '&' character between them so I append every prime number to empty string called result and then append '&' character to it, in this case we will get all prime numbers with '&' between them and '&' at the end of the string so finally i excluded this character at the end of the string to has a corrected format  */
+/* Prime numbers are numbers that are divisible by 1 and by it self only , so in this solution make nested loop, 
+outer loop are looping on i variable which starts with 2 to 1000, 
+inner loop are iterating from 2 to the previous number to i in order to check if i variable is divisible by any number in this range or not , 
+if yes so i value in this iteration is not prime number because it is divisible by an number or more beside 1 and it self, if no , 
+so it its a prime number , the result is a string which should have all the numbers satisfied the condition with '&' character between them 
+so I append every prime number to empty string called result and then append '&' character to it, 
+in this case we will get all prime numbers with '&' between them and '&' at the end of the string 
+so finally i excluded this character at the end of the string to has a corrected format  */
