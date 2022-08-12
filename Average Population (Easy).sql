@@ -2,4 +2,4 @@
 
 select floor(avg(population)) from city
 
-/* New Math Function used here to solve the problem , after counting the population I floored the result (converting decimal number to the next greater integer to it) */
+/* New Math Function used here to solve the problem , after counting the population I floored the result (converting decimal number to the greater integer less than it) */
