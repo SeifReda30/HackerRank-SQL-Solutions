@@ -12,5 +12,9 @@ select 'There are a total of ' , count(occupation) , concat(lower(occupation),'s
 
 
 
-/* The solution consists of two queries , first query is about getting all occupations followed by first letter of proffession , I used concat as the result string consists of two parts , first part is the occupation name , second part is the first letter of proffession and it is done by substring function after specifieng the word and the start and end position of the substring  */
-/* Second Query is about getting the total number of each occupation and it is done by using aggregate function count and the result grouped by the occupation and the final result formatted by the concat function */
+/* The solution consists of two queries , first query is about getting all occupations followed by first letter of proffession , 
+I used concat as the result string consists of two parts , first part is the occupation name , second part is the first letter of proffession 
+and it is done by substring function after specifieng the word and the start and end position of the substring  */
+
+/* Second Query is about getting the total number of each occupation and it is done by using aggregate function count and the result grouped by
+the occupation and the final result formatted by the concat function */

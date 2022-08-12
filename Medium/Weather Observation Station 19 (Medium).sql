@@ -5,4 +5,5 @@ Query the Euclidean Distance between points P1 and P2 and format your answer to 
 
 select cast(sqrt((power(min(LAT_N)-max(LAT_N),2))+( power(min(Long_w)-max(Long_w),2))) as decimal (18,4)) from station;
 
-/* Similar to previous problem, I searched for Euclidean Distance and interpreted the formula to sql code, sqrt function is used to calculate square root and power to calculate the power of number to number */
+/* Similar to previous problem, I searched for Euclidean Distance and interpreted the formula to sql code, sqrt function is used to calculate 
+square root and power to calculate the power of number to number */

@@ -14,4 +14,8 @@ group by h.hacker_id, h.name
 having count(s.hacker_id) > 1
 order by count(s.hacker_id) desc, s.hacker_id asc
 
-/* In this solution I used multiple joins by this order : first joined submissions and challenges tables and then joined the result table with difficulty and then joined the result table with hackers and then retrieved hacker id and name from the last resulted table where the hacker submission score matched with difficulty score (in order to retrieve only who got full score) and challenge difficulty level matched with original difficulty level then the result aggregated to hacker id and name and then filtered to the hacker id who exist in the table more than one time (the hacker id got full score more than one challenge)  ,   */
+/* In this solution I used multiple joins by this order : first joined submissions and challenges tables and then joined the result table 
+with difficulty and then joined the result table with hackers and then retrieved hacker id and name from the last resulted table where 
+the hacker submission score matched with difficulty score (in order to retrieve only who got full score) and challenge difficulty level
+matched with original difficulty level then the result aggregated to hacker id and name and then filtered to the hacker id who exist in the table 
+more than one time (the hacker id got full score more than one challenge)  */
